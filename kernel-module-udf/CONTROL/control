@@ -1,0 +1,11 @@
+Package: kernel-module-udf
+Priority: optional
+Version: 3.2.0-psp5.4-r2
+Depends: update-modules, kernel-3.2.0
+Architecture: am335x_evm_spyglass_ii
+Section: kernel
+Maintainer: Ashley Towns <mail@ashleytowns.id.au>
+Source: udf.ko
+Description: This is the new file system used on some CD-ROMs and DVDs. Say Y if
+ you intend to mount DVD discs or CDRW's written in packet mode, or
+ if written to by other UDF utilities, such as DirectCD.

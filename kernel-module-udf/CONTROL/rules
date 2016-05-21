@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+ROOT=/tmp/kernel-module-udf
+TARGET=$(ROOT)/lib/modules/3.2.0/kernel/fs/udf/
+
+build:
+install:
+	mkdir -p $(TARGET)
+	cp -vr udf.ko $(TARGET)
+	chown -R root:root $(ROOT)
+clean:
+	rm -rvf $(ROOT)

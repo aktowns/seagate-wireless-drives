@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+ROOT=/tmp/kernel-module-isofs
+TARGET=$(ROOT)/lib/modules/3.2.0/kernel/fs/isofs/
+
+build:
+install:
+	mkdir -p $(TARGET)
+	cp -vr isofs.ko $(TARGET)
+	chown -R root:root $(ROOT)
+clean:
+	rm -rvf $(ROOT)

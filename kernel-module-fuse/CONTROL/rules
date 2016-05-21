@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+ROOT=/tmp/kernel-module-fuse
+TARGET=$(ROOT)/lib/modules/3.2.0/kernel/fs/fuse/
+
+build:
+install:
+	mkdir -p $(TARGET)
+	cp -vr fuse.ko $(TARGET)
+	chown -R root:root $(ROOT)
+clean:
+	rm -rvf $(ROOT)

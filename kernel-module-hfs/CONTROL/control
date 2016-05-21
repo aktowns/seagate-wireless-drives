@@ -1,0 +1,11 @@
+Package: kernel-module-hfs
+Priority: optional
+Version: 3.2.0-psp5.4-r2
+Depends: update-modules, kernel-3.2.0
+Architecture: am335x_evm_spyglass_ii
+Section: kernel
+Maintainer: Ashley Towns <mail@ashleytowns.id.au>
+Source: hfs.ko
+Description: you will be able to mount Macintosh-formatted
+ floppy disks and hard drive partitions with full read-write access.
+ 

@@ -1,0 +1,14 @@
+Package: kernel-module-isofs
+Priority: optional
+Version: 3.2.0-psp5.4-r2
+Depends: update-modules, kernel-3.2.0
+Architecture: am335x_evm_spyglass_ii
+Section: kernel
+Maintainer: Ashley Towns <mail@ashleytowns.id.au>
+Source: isofs.ko
+Description: This is the standard file system used on CD-ROMs.  It was previously
+ known as "High Sierra File System" and is called "hsfs" on other
+ Unix systems.  The so-called Rock-Ridge extensions which allow for
+ long Unix filenames and symbolic links are also supported by this
+ driver. 
+

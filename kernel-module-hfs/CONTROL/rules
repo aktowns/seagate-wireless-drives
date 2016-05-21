@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+ROOT=/tmp/kernel-module-hfs
+TARGET=$(ROOT)/lib/modules/3.2.0/kernel/fs/hfs/
+
+build:
+install:
+	mkdir -p $(TARGET)
+	cp -vr hfs.ko $(TARGET)
+	chown -R root:root $(ROOT)
+clean:
+	rm -rvf $(ROOT)
