@@ -1,0 +1,18 @@
+Package: kernel-module-ext4
+Priority: optional
+Version: 3.2.0-psp5.4-r2
+Depends: update-modules, kernel-3.2.0, kernel-module-jbd2, kernel-module-mbcache
+Architecture: am335x_evm_spyglass_ii
+Section: kernel
+Maintainer: Ashley Towns <mail@ashleytowns.id.au>
+Source: ext4.ko
+Description: This is the next generation of the ext3 filesystem.
+
+ Unlike the change from ext2 filesystem to ext3 filesystem,
+ the on-disk format of ext4 is not forwards compatible with
+ ext3; it is based on extent maps and it supports 48-bit
+ physical block numbers.  The ext4 filesystem also supports delayed
+ allocation, persistent preallocation, high resolution time stamps,
+ and a number of other features to improve performance and speed
+ up fsck time.  For more information, please see the web pages at
+ http://ext4.wiki.kernel.org.

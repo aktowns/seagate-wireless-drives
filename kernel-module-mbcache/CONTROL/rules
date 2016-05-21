@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+build:
+install:
+	mkdir -p /tmp/kernel-module-mbcache/lib/modules/3.2.0/kernel/fs/
+	cp -vr mbcache.ko /tmp/kernel-module-mbcache/lib/modules/3.2.0/kernel/fs/
+	chown -R root:root /tmp/kernel-module-mbcache
+clean:
+	rm -rvf /tmp/kernel-module-mbcache/
